@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volpe Ventures - App Idea Assessment</title>
+    <meta name="description" content="Volpe Ventures — Validate your mobile or web app idea with expert product strategy and market validation from a product veteran with 14+ years of experience.">
+    <link rel="canonical" href="https://volpeventures.com/">
+    <meta property="og:title" content="Volpe Ventures — App Idea Assessment">
+    <meta property="og:description" content="Validate your app idea with expert guidance and clear next steps. Book a consultation or choose an assessment package.">
+    <meta property="og:image" content="https://volpeventures.com/og-image.png">
+    <meta property="og:url" content="https://volpeventures.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#667eea">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://calendar.google.com/" crossorigin>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Volpe Ventures",
+      "url": "https://volpeventures.com/",
+      "logo": "https://volpeventures.com/logo.png",
+      "description": "App idea validation and product strategy by an experienced product strategist.",
+      "sameAs": [
+        "https://www.linkedin.com/in/matthewvillaire/"
+      ]
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 24px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 26px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        nav .nav-links a {
+            margin-left: 40px;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 80px 24px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #f5f7ff;
+            transform: translateY(-2px);
+        }
+
+        .btn-large {
+            padding: 18px 40px;
+            font-size: 18px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 120px 24px 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 24px;
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .trust-strip {
+            background: linear-gradient(to bottom, #f8f9fe 0%, #ffffff 100%);
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        .trust-items {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .trust-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .trust-item strong {
+            display: block;
+            font-size: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .trust-item span {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .about-section {
+            background: white;
+            padding: 100px 24px;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 280px;
+            height: 280px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .about-text h2 {
+            font-size: 42px;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .about-text .subtitle {
+            font-size: 22px;
+            color: #667eea;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin: 32px 0;
+        }
+
+        .highlight-item {
+            background: #f8f9fe;
+            padding: 16px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .highlight-item strong {
+            display: block;
+            color: #1a1a1a;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .highlight-item span {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .linkedin-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 24px;
+            padding: 12px 24px;
+            background: #0077b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .linkedin-link:hover {
+            background: #006399;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+        }
+
+        .linkedin-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .how-it-works {
+            background: linear-gradient(to bottom, #ffffff 0%, #f8f9fe 100%);
+            text-align: center;
+        }
+
+        .how-it-works h2 {
+            font-size: 42px;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .how-it-works .subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 280px;
+            padding: 40px 32px;
+            background: white;
+            border-radius: 16px;
+            border: 2px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+
+        .step:hover {
+            border-color: #667eea;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.15);
+        }
+
+        .step-number {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 24px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .step h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .step p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .value-prop {
+            background: white;
+        }
+
+        .value-prop h2 {
+            font-size: 42px;
+            margin-bottom: 16px;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .value-prop .subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 48px;
+            text-align: center;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .value-card {
+            background: linear-gradient(to bottom right, #f8f9fe 0%, #ffffff 100%);
+            padding: 40px;
+            border-radius: 16px;
+            border: 2px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            border-color: #667eea;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.15);
+        }
+
+        .value-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .value-card p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .cta-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 32px;
+            opacity: 0.95;
+        }
+
+        .disclaimer {
+            background: #fffbf0;
+            padding: 32px 24px;
+            text-align: center;
+            border-top: 2px solid #ffe9a3;
+            border-bottom: 2px solid #ffe9a3;
+        }
+
+        .disclaimer p {
+            font-size: 16px;
+            color: #735c0f;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .packages-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 24px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .packages-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .packages-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .packages-hero h1 {
+            font-size: 48px;
+            margin-bottom: 16px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .packages-hero p {
+            font-size: 20px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        .package-card {
+            background: white;
+            border-radius: 16px;
+            padding: 48px 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid #f0f0f0;
+            position: relative;
+        }
+
+        .package-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+        }
+
+        .package-card.featured {
+            border-color: #667eea;
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .package-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .package-card h3 {
+            font-size: 28px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .package-subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        .package-price {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .package-price-note {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 32px;
+        }
+
+        .package-features {
+            list-style: none;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+
+        .package-features li {
+            padding: 12px 0;
+            padding-left: 32px;
+            position: relative;
+            font-size: 16px;
+            color: #1a1a1a;
+        }
+
+        .package-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .faq {
+            background: linear-gradient(to bottom, #ffffff 0%, #f8f9fe 100%);
+            padding: 80px 24px;
+        }
+
+        .faq h2 {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 16px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .faq .subtitle {
+            font-size: 20px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+            padding: 32px;
+            background: white;
+            border-radius: 12px;
+            border: 2px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.1);
+        }
+
+        .faq-item h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 48px 24px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 15px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin-top: 24px;
+            opacity: 0.6;
+            font-size: 14px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Skip link */
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .skip-link:focus {
+            position: fixed;
+            left: 16px;
+            top: 16px;
+            width: auto;
+            height: auto;
+            padding: 12px 16px;
+            background: #ffffff;
+            color: #1a1a1a;
+            z-index: 9999;
+            border-radius: 6px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
+        /* Visible focus styles for keyboard users */
+        a:focus, button:focus {
+            outline: 3px solid #667eea;
+            outline-offset: 3px;
+        }
+
+        /* Indicate current page in nav */
+        .nav-links a[aria-current="page"] {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav .nav-links a {
+                margin-left: 20px;
+                font-size: 15px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 14px 28px;
+            }
+
+            .btn-large {
+                font-size: 17px;
+                padding: 16px 32px;
+            }
+
+            .trust-items {
+                gap: 40px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-image img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .how-it-works h2,
+            .value-prop h2,
+            .faq h2,
+            .cta-section h2,
+            .about-text h2 {
+                font-size: 32px;
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .package-card {
+                padding: 32px 24px;
+            }
+
+            .value-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+      <nav>
+          <div class="container">
+              <a href="#" class="logo" data-nav="home">Volpe Ventures</a>
+              <div class="nav-links">
+                  <a href="#" data-nav="home">Home</a>
+                  <a href="#" data-nav="packages">Packages</a>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div id="page-home" class="page">
+        <section class="hero">
+            <div class="container">
+                <h1>Validate Your App Idea Before You Build</h1>
+                <p>Get expert guidance from a product veteran who's launched successful mobile and web products for 14+ years</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary btn-large" data-nav="packages">View Packages</a>
+                    <a href="https://calendar.google.com/appointments/schedules/AcZssZ0w4yDEunuxGHeKHov6UIqv5D7ibmoS0rFzrPYi-VE1swbZrplepZ6_Z0Mc1JxjKQDVmjb96SCK" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">Start for $50</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-strip">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <strong>14+ Years</strong>
+                    <span>Product Experience</span>
+                </div>
+                <div class="trust-item">
+                    <strong>Mobile & Web</strong>
+                    <span>Apps Launched</span>
+                </div>
+                <div class="trust-item">
+                    <strong>Market Validation</strong>
+                    <span>Expertise</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocJJOJTzSvEDDzvfWPkFgvLGDvmIbLBXB-WoPYMfNfGpkIY3Gw=s288-c-no" alt="Matthew Villaire" loading="lazy" width="280" height="280">
+                </div>
+                <div class="about-text">
+                    <h2>Hi, I'm Matthew Villaire</h2>
+                    <p class="subtitle">Product Strategist & Entrepreneur Advocate</p>
+                    <p>
+                        For over 14 years, I've been living and breathing product development—from building mobile apps that reached millions of users to architecting web platforms that transformed businesses. But here's what drives me: <strong>helping dreamers become builders.</strong>
+                    </p>
+                    <p>
+                        I've seen too many passionate entrepreneurs pour their savings into ideas that weren't quite ready, or miss opportunities because they didn't know where to start. That's why I created Volpe Ventures—to give you the honest, experienced guidance you need before you invest thousands in development.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <strong>14+ Years</strong>
+                            <span>Building products that scale</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Product Strategy</strong>
+                            <span>From MVP to market leader</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Startup Experience</strong>
+                            <span>Both sides of the table</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Real Results</strong>
+                            <span>Apps with millions of users</span>
+                        </div>
+                    </div>
+                    <p>
+                        <strong>My mission is simple:</strong> Help you make informed decisions, avoid costly mistakes, and build something meaningful. Whether your idea needs a pivot, validation, or a roadmap—I'll give you straight talk backed by real experience.
+                    </p>
+                    <a href="https://www.linkedin.com/in/matthewvillaire/" target="_blank" class="linkedin-link" rel="noopener noreferrer">
+                        <svg class="linkedin-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        View My LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <p class="subtitle">A simple three-step process to validate your app idea</p>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Book Your Session</h3>
+                        <p>Choose the package that fits your needs and schedule your consultation</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Expert Interview</h3>
+                        <p>We'll discuss your idea, market, competitors, and business goals in detail</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Get Your Report</h3>
+                        <p>Receive actionable insights and recommendations within 48 hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section value-prop">
+            <div class="container">
+                <h2>Why Validate Before You Build?</h2>
+                <p class="subtitle">Smart entrepreneurs test their ideas before investing thousands</p>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <h3>💰 Save Money</h3>
+                        <p>Avoid spending $20K-$100K on an app that won't find product-market fit. A small investment in validation saves massive costs later.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>⏱️ Save Time</h3>
+                        <p>Building an app takes 6-12 months. Get clarity on your idea in days, not months of trial and error.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>🎯 Build Confidence</h3>
+                        <p>Make decisions based on expert analysis and market research, not just gut feeling. Know what to build and why.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Get Started?</h2>
+                <p>Choose the assessment package that's right for you</p>
+                <a href="#" class="btn btn-secondary btn-large" data-nav="packages">View Packages</a>
+            </div>
+        </section>
+
+        <section class="disclaimer">
+            <p><strong>Important:</strong> This assessment provides expert guidance based on 14+ years of product experience. Results are not guaranteed. This is professional advice, not legal or tax consultation. Success depends on execution, market timing, and conditions.</p>
+        </section>
+      </div>
+
+      <div id="page-packages" class="page hidden">
+        <section class="packages-hero">
+            <div class="container">
+                <h1>Choose Your Assessment Package</h1>
+                <p>From quick validation to comprehensive launch preparation</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3>Quick Assessment</h3>
+                    <p class="package-subtitle">Perfect for initial validation</p>
+                    <div class="package-price">$50</div>
+                    <div class="package-price-note">48-hour delivery</div>
+                    <ul class="package-features">
+                        <li>30-minute consultation call</li>
+                        <li>Initial market viability check</li>
+                        <li>Technical feasibility overview</li>
+                        <li>Top 3 opportunities identified</li>
+                        <li>Top 3 risks & challenges identified</li>
+                        <li>Recommended next steps</li>
+                        <li>1-page executive summary (PDF)</li>
+                    </ul>
+                    <a href="https://calendar.google.com/appointments/schedules/AcZssZ0w4yDEunuxGHeKHov6UIqv5D7ibmoS0rFzrPYi-VE1swbZrplepZ6_Z0Mc1JxjKQDVmjb96SCK" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; text-decoration: none;">Book Now</a>
+                </div>
+
+                <div class="package-card featured">
+                    <div class="package-badge">Most Popular</div>
+                    <h3>Business Builder</h3>
+                    <p class="package-subtitle">For serious entrepreneurs</p>
+                    <div class="package-price">$499</div>
+                    <div class="package-price-note">~2 weeks delivery</div>
+                    <ul class="package-features">
+                        <li>Everything in Quick Assessment</li>
+                        <li>60-minute deep-dive consultation</li>
+                        <li>Competitive landscape analysis</li>
+                        <li>Target market sizing & research</li>
+                        <li>User persona development (2-3 personas)</li>
+                        <li>Go-to-market strategy outline</li>
+                        <li>Basic revenue model framework</li>
+                        <li>Key success metrics (KPIs)</li>
+                        <li>12-page detailed report (PDF)</li>
+                        <li>One 30-min follow-up call</li>
+                    </ul>
+                    <a href="https://calendar.google.com/appointments/schedules/AcZssZ1lBo8Nxk8ekGVS8hhtE9lBDB5sh1HLVwREXcrapkSh-OgmVFYyaxAncIxnVLaOlu6l5lDoa19I" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; text-decoration: none;">Book Now</a>
+                </div>
+
+                <div class="package-card">
+                    <h3>Launch Ready</h3>
+                    <p class="package-subtitle">Build with confidence</p>
+                    <div class="package-price">$899</div>
+                    <div class="package-price-note">~3 weeks delivery</div>
+                    <ul class="package-features">
+                        <li>Everything in Business Builder</li>
+                        <li>Two 60-minute strategy sessions</li>
+                        <li>Detailed feature prioritization roadmap</li>
+                        <li>Clickable prototype (5-7 key screens)</li>
+                        <li>Technical architecture recommendations</li>
+                        <li>Development cost estimate breakdown</li>
+                        <li>Agency/developer recommendations</li>
+                        <li>MVP scope definition</li>
+                        <li>Launch timeline & milestones</li>
+                        <li>25-page comprehensive report (PDF)</li>
+                        <li>Prototype files (Figma)</li>
+                        <li>Two 30-min follow-up calls</li>
+                        <li>Email support for 30 days</li>
+                    </ul>
+                    <a href="https://calendar.google.com/appointments/schedules/AcZssZ0Wv4Ju6FtQixmlUH2pejyOcF3GD9ahllYIQHrheJ-4OWB5XzqmvVRwd_dTMOkbmHVbtunZcF6X" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; text-decoration: none;">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p class="subtitle">Everything you need to know</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>How is this different from a typical consultant?</h3>
+                    <p>I focus specifically on app idea validation with 14+ years of hands-on product experience. You're not getting generic business advice—you're getting practical insights from someone who's built and launched real products.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Will you sign an NDA?</h3>
+                    <p>Absolutely. I'm happy to sign a mutual NDA before our call—no questions asked. Your idea and business details remain completely confidential. I take intellectual property protection seriously and understand that your concept is valuable. Simply send me your NDA (or I can provide a standard template), and we'll get it signed before our scheduled consultation.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is your cancellation and rescheduling policy?</h3>
+                    <p>You may reschedule your consultation once within a reasonable timeframe (at least 24 hours before your scheduled appointment). If you need to cancel entirely, the $50 consultation fee is non-refundable to compensate for the reserved time slot. For packages over $50, cancellations made more than 48 hours in advance are eligible for a full refund minus the $50 booking fee.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you build the app yourself?</h3>
+                    <p>No, I provide strategic guidance and planning. For the Launch Ready package, I create clickable prototypes to help you communicate your vision, but I don't do full development. I can recommend trusted development partners.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What if my idea won't work?</h3>
+                    <p>Honest feedback is part of the value. If I see major red flags, I'll tell you directly and explain why. Sometimes the best advice is to pivot or wait—that saves you tens of thousands of dollars and months of time.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I upgrade from one package to another?</h3>
+                    <p>Yes! If you start with Quick Assessment and want to go deeper, you can upgrade to Business Builder or Launch Ready. The $50 Quick Assessment fee will be credited toward the higher tier package.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How long does each package take?</h3>
+                    <p>Quick Assessment: 48 hours after our call. Business Builder: ~2 weeks. Launch Ready: ~3 weeks. Timelines depend on your responsiveness and any revisions needed.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What format do I receive the deliverables?</h3>
+                    <p>Reports are delivered as PDF documents. Prototypes (Launch Ready only) are shared via Figma—no account needed to view and click through. All files are yours to keep and share with your team or investors.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What happens during the consultation call?</h3>
+                    <p>We'll have a structured conversation about your idea via video call (Zoom or Google Meet). I'll ask questions about your target market, competitors, business model, and goals. Come prepared with notes about your concept and any research you've done.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is success guaranteed?</h3>
+                    <p>No. I provide expert analysis and recommendations based on experience, but market success depends on execution, timing, competition, and many other factors. This is professional guidance, not a guarantee.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>All major credit cards, Apple Pay, and Google Pay via Google Calendar's integrated payment system.</p>
+                </div>
+            </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Disclaimer</a>
+        </div>
+        <p id="footer-copy">&copy; 2024 Volpe Ventures. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Unobtrusive navigation and accessibility helpers
+        function showPage(pageName) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.add('hidden'));
+
+            const targetPage = document.getElementById('page-' + pageName);
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+            }
+
+            // update nav aria-current
+            document.querySelectorAll('.nav-links a, .logo').forEach(a => {
+                a.removeAttribute('aria-current');
+            });
+            const navMatches = document.querySelectorAll('[data-nav="' + pageName + '"]');
+            navMatches.forEach(el => el.setAttribute('aria-current', 'page'));
+
+            // move focus to main region for screen readers
+            const main = document.getElementById('main-content');
+            if (main) main.focus({preventScroll: true});
+
+            window.scrollTo(0, 0);
+            return false;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Attach navigation handlers
+            document.querySelectorAll('[data-nav]').forEach(el => {
+                el.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const page = el.getAttribute('data-nav');
+                    showPage(page);
+                });
+            });
+
+            // Set initial aria-current
+            const initial = document.querySelector('[data-nav="home"]');
+            if (initial) initial.setAttribute('aria-current', 'page');
+
+            // Make external target=_blank links safe if not already set
+            document.querySelectorAll('a[target="_blank"]').forEach(a => {
+                if (!a.hasAttribute('rel')) a.setAttribute('rel', 'noopener noreferrer');
+            });
+
+            // Dynamic footer year
+            const footer = document.getElementById('footer-copy');
+            if (footer) {
+                footer.innerHTML = '&copy; ' + new Date().getFullYear() + ' Volpe Ventures. All rights reserved.';
+            }
+        });
+    </script>
+</body>
+</html>
